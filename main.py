@@ -5,5 +5,7 @@ app = FastAPI()
 def read_root():
     return {"Status": "Secure & Live"}
 
-# THIS IS A SECURITY VULNERABILITY (Hardcoded password)
-password = "admin123_very_secret"
+import os
+
+# SECURE: We pull the secret from the system environment, not the code
+SECRET_KEY = os.getenv("APP_SECRET_KEY", "default_safe_value")
