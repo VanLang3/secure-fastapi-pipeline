@@ -1,0 +1,25 @@
+name: Secure CI/CD Pipeline
+on: [push] 
+
+jobs:
+  security_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Run Bandit (Python Security)
+        run: |
+          pip install bandit
+          bandit -r . 
+
+      - name: Run Trivy (Vulnerability Scan)
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: 'fs'
+          severity: 'CRITICAL,HIGH'
