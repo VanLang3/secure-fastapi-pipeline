@@ -10,4 +10,3 @@ import os
 # SECURE: We pull the secret from the system environment, not the code
 SECRET_KEY = os.getenv("APP_SECRET_KEY", "default_safe_value")
 
-pasword = 'incorrect'
