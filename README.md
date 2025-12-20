@@ -1,6 +1,6 @@
 # Secure-FastAPI-Pipeline 🛡️
 
-A professional DevSecOps project demonstrating a **"Shift Left"** security strategy. This repository automates the identification of vulnerabilities in both proprietary code and third-party dependencies before deployment.
+A professional DevSecOps project demonstrating a **"Shift Left"** security strategy. This repository automates the identification of vulnerabilities in both proprietary code and third-party dependencies(libraries) before deployment.
 
 
 
