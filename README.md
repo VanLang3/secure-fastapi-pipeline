@@ -11,8 +11,8 @@ In modern software engineering, security cannot be an afterthought. This project
 * **Language:** Python 3.10
 * **Framework:** FastAPI (High-performance REST API)
 * **Automation:** GitHub Actions (CI/CD)
-* **Security (SAST):** Bandit (Scans custom Python logic)
-* **Security (SCA):** Trivy (Scans the software supply chain/dependencies)
+* **Security (SAST):** Bandit (scans code)
+* **Security (SCA):** Trivy (scans libraries for CVEs)
 * **Cloud:** AWS (Deployment Target)
 
 ## 🏗️ Architecture
