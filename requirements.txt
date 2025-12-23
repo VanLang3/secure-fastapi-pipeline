@@ -1,3 +1,8 @@
 fastapi
 uvicorn
 bandit
+sqlalchemy
+psycopg2-binary
+redis
+streamlit
+pandas

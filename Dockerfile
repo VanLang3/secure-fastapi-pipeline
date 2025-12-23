@@ -11,7 +11,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # 5. Copy your application code
-COPY main.py .
+COPY . .
 
 # 6. Create a non-root user (CYBER BEST PRACTICE)
 # By default, Docker runs as 'root'. If a hacker breaks in, they have total control.

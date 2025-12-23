@@ -1,0 +1,12 @@
+# Security (NEVER COMMIT THESE)
+.env
+
+# Python junk
+__pycache__/
+*.pyc
+
+# Mac junk
+.DS_Store
+
+# Docker junk
+.docker/
